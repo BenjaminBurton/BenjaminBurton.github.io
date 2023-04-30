@@ -5,7 +5,7 @@ theme = 'netsec'
 MetaDataFormat = 'toml'
 
 paginate  = 10
-rssLimit  = 10  # Maximum number of items in the RSS feed.
+rssLimit  = 10  # Maximum number of items in RSS feed.
 
 archetypeDir = "archetypes"
 contentDir   = "content"
