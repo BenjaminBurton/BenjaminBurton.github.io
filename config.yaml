@@ -9,7 +9,7 @@ params:
   promptColor: grey
   promptSimbols: ":~$"
   promptSimbolsColor: grey
-  startxLocation: https://benjaminburton.github.io/
+  startxLocation: https://benjaminburton.github.io/post
   hideSocialName: true
   exitLocation: 'about:blank'
   hidesource: true
