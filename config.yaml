@@ -1,5 +1,5 @@
 ## Example Config file
-BaseURL: "cv.benjaminburton.github.io/"
+BaseURL: "benjaminburton.github.io/"
 #theme: "terminalCV"
 title: "terminalCV"
 
