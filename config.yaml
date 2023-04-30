@@ -1,5 +1,5 @@
 ## Example Config file
-BaseURL: "benjaminburton.github.io/"
+BaseURL: "benjaminburton.github.io/about"
 #theme: "terminalCV"
 title: "terminalCV"
 
@@ -9,7 +9,7 @@ params:
   promptColor: grey
   promptSimbols: ":~$"
   promptSimbolsColor: grey
-  startxLocation: https://benjaminburton.github.io/post
+  startxLocation: cv.benjaminburton.github.io/
   hideSocialName: true
   exitLocation: 'about:blank'
   hidesource: true
