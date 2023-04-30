@@ -3,16 +3,16 @@
 
 name = "Netsec"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/BenjaminBurton/BenjaminBurton.github.io/blob/main/themes/netsec/LICENSE"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://benjaminburton.github.io/"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Lavell Burton"
+  homepage = "https://benjaminburton.github.io/"
 
 # If porting an existing theme
 [original]
