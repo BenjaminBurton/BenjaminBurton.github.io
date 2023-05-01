@@ -1,15 +1,15 @@
 ## Example Config file
-BaseURL: "https://benjaminburton.github.io/"
+BaseURL: "localhost"
 #theme: "terminalCV"
 title: "terminalCV"
 
 params:
   description: "Benjamin Burton cv terminal format"
-  prompt: "BenjaminBurton@terminalcv"
+  prompt: " > BenjaminBurton@terminalcv ~ $ "
   promptColor: grey
   promptSimbols: ":~$"
   promptSimbolsColor: grey
-  startxLocation: https://benjaminburton.github.io/
+  startxLocation: "localhost/content/about-us"
   hideSocialName: true
   exitLocation: 'about:blank'
   hidesource: true

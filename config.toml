@@ -1,3 +1,7 @@
-baseURL = 'BenjaminBurton.github.io'
+baseURL = 'localhost'
 languageCode = 'en-us'
 title = 'Beneficial'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
