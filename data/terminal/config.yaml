@@ -1,5 +1,5 @@
 ## Example Config file
-BaseURL: "localhost/content/about"
+BaseURL: "localhost"
 #theme: "terminalCV"
 title: "terminalCV"
 
@@ -9,7 +9,7 @@ params:
   promptColor: grey
   promptSimbols: ":~$"
   promptSimbolsColor: grey
-  startxLocation: "localhost/content/about"
+  startxLocation: "/content/about"
   hideSocialName: true
   exitLocation: 'about:blank'
   hidesource: true
