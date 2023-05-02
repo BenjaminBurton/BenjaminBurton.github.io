@@ -1,7 +1,12 @@
-baseURL = 'BenjaminBurton.github.io'
-languageCode = 'en-us'
-title = 'Beneficial'
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "My Website"
+
+[params]
+  # Define the terminal YAML file and the terminal container ID
+  terminalYAML = "terminal.yaml"
+  terminalContainer = "terminal"
+
+[[params.terminalCommands]]
+  command = "echo 'Hello, world!'"
+  description = "Print a greeting"

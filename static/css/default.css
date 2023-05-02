@@ -161,12 +161,7 @@ select {
     text-transform: none
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    -webkit-appearance: button
-}
+
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -454,12 +449,7 @@ pre[data-line] {
     white-space: pre
 }
 
-@media print {
-    .line-highlight {
-        -webkit-print-color-adjust: exact;
-        color-adjust: exact
-    }
-}
+
 
 .line-highlight:before,
 .line-highlight[data-end]:after {
@@ -569,18 +559,7 @@ div.code-toolbar>.toolbar a {
     cursor: pointer
 }
 
-div.code-toolbar>.toolbar button {
-    background: none;
-    border: 0;
-    color: inherit;
-    font: inherit;
-    line-height: normal;
-    overflow: visible;
-    padding: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none
-}
+
 
 div.code-toolbar>.toolbar a,
 div.code-toolbar>.toolbar button,
@@ -1663,7 +1642,6 @@ hr {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    -webkit-backface-visibility: hidden;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;

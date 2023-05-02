@@ -1,17 +1,9 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Hugo Starter</title>
-    
-    
-  </head>
-   <link href="layouts/term.js" />
+{{ define "main" }}
+  </head>   
    <link href="/css/default.css" rel="stylesheet" />
    <script src="https://kit.fontawesome.com/0ed5cec925.js" crossorigin="anonymous"></script>
 
-  <body>
+
 
     
         <div class="container-fluid">
@@ -40,15 +32,15 @@
             
             <div class="submenu">
                 <li class="dropdown">
-                    <a href="localhost/content/">
-                        About
+                    <a href="/about/ ">
+                        ~/about
                     </a>
                 </li>
             </div>
             <div class="submenu">
                 <li class="dropdown">
-                    <a href="local/posts">
-                        Posts
+                    <a href="localhost:1313/post">
+                        ~/posts
                     </a>
                 </li>
             </div>
@@ -57,13 +49,13 @@
             
                 <div class="submenu">
                     <li class="dropdown">
-                        <a href="localhost/tools">
-                            Tools
+                        <a href="localhost:1313/tools">
+                            ~/tools
                         </a>
                         <div class="dropdown-content">
 
                                <a title="PrivateBin" href="#">
-                                  ParrotOS
+                                  ~/ParrotOS
                                 </a>
                             
                         </div>
@@ -115,22 +107,22 @@
                     
         <li><a href="https://github.com/BenjaminBurton" class="icon fa-brands fa-github" target="_blank" rel="noopener" title="Github"></a></li>
     
-        <li><a href="" class="icon fa-solid fa-terminal" target="_blank" rel="noopener" title="Cv"></a></li>
+        <li><a href="#" class="icon fa-solid fa-terminal" target="_blank" rel="noopener" title="Cv"></a></li>
     
-        <li><a href="" class="icon fa-brands fa-youtube" target="_blank" rel="noopener" title="Youtube"></a></li>
+        <li><a href="#" class="icon fa-brands fa-youtube" target="_blank" rel="noopener" title="Youtube"></a></li>
     
-        <li><a href="" class="icon fa-brands fa-twitter" target="_blank" rel="noopener" title="Twitter"></a></li>
+        <li><a href="#" class="icon fa-brands fa-twitter" target="_blank" rel="noopener" title="Twitter"></a></li>
     
-        <li><a href="" class="icon fa-brands fa-instagram" target="_blank" rel="noopener" title="Instagram"></a></li>
+        <li><a href="#" class="icon fa-brands fa-instagram" target="_blank" rel="noopener" title="Instagram"></a></li>
     
-        <li><a href="i" class="icon fa-brands fa-twitch" target="_blank" rel="noopener" title="Twitch"></a></li>
+        <li><a href="#" class="icon fa-brands fa-twitch" target="_blank" rel="noopener" title="Twitch"></a></li>
     
-        <li><a href="" class="icon fa-brands fa-discord" target="_blank" rel="noopener" title="Discord"></a></li>
+        <li><a href="#" class="icon fa-brands fa-discord" target="_blank" rel="noopener" title="Discord"></a></li>
     
-        <li><a href="" class="icon fa-solid fa-coffee" target="_blank" rel="noopener" title="Buy me a coffee"></a></li>
+        <li><a href="#" class="icon fa-solid fa-coffee" target="_blank" rel="noopener" title="Buy me a coffee"></a></li>
     
                 
-                <li><a href="" target="_blank" title="rss" class="icon fa-solid fa-rss"></a></li>
+                <li><a href="#" target="_blank" title="rss" class="icon fa-solid fa-rss"></a></li>
                 
             </ul>
         </div>
@@ -138,14 +130,14 @@
     
         <div class="footer__inner">
             <span>&copy;2023</span>&nbsp;
-            <span><a href="index.html">Benjamin Burton</a></span>&nbsp;
+            <span><a href="https://BenjaminBurton.github.io">Benjamin Burton</a></span>&nbsp;
             <span>All Rights Reserved</span>
         </div>
     
         <div class="footer__inner">
           
             <div class="footer__content">
-                <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>with <a href="index.html#">Benjamin Burton</a></span> 
+                <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>with <a href="https://BenjaminBurton.github.io#">Benjamin Burton</a></span> 
             </div>
           
         </div>
@@ -153,5 +145,4 @@
 
             
         </div>
-
-</html>
+        {{ end }}
