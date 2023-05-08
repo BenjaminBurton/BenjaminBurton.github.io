@@ -1,6 +1,0 @@
-- name: "help"
-  command: "echo 'Type `help` to display this help text.'"
-  description: "Display help text"
-- name: "greet"
-  command: "echo 'Hello, world!'"
-  description: "Print a greeting"
