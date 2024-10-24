@@ -1,7 +1,7 @@
 Random Name Generator
 ========================
 
-Code example on how to create a function that returns random names 
+Code example on how to create a function that returns random names on run
 
 .. code-block:: python
 
