@@ -10,7 +10,7 @@ Example 1
 
     import random
 
-    # Lists of possible first and last names
+    # Lists of possible first and last names to display
     first_names = ["Alex", "Jamie", "Chris", "Pat", "Taylor", "Jordan", "Casey", "Riley", "Morgan"]
     last_names = ["Smith", "Johnson", "Brown", "Williams", "Jones", "Garcia", "Miller", "Davis", "Lopez"]
 

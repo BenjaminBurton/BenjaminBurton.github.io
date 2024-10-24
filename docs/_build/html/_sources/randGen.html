@@ -343,11 +343,12 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Random Name Generator</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script">Python Script</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-uuid">Python Script UUID</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python-timestamp-random">Python Timestamp Random</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-hash-function">Python Script Hash Function</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-incremental-counter">Python Script Incremental Counter</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-python-script-uuid">Example 3 Python Script UUID</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-python-timestamp-random">Example 4 Python Timestamp Random</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5-python-script-hash-function">Example 5 Python Script Hash Function</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-python-script-incremental-counter">Example 6 Python Script Incremental Counter</a></li>
 </ul>
 
             </nav>
@@ -363,8 +364,28 @@
   <section id="random-name-generator">
 <h1>Random Name Generator<a class="headerlink" href="#random-name-generator" title="Link to this heading">#</a></h1>
 </section>
-<section id="python-script">
-<h1>Python Script<a class="headerlink" href="#python-script" title="Link to this heading">#</a></h1>
+<section id="example-1">
+<h1>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># Lists of possible first and last names</span>
+<span class="n">first_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Alex&quot;</span><span class="p">,</span> <span class="s2">&quot;Jamie&quot;</span><span class="p">,</span> <span class="s2">&quot;Chris&quot;</span><span class="p">,</span> <span class="s2">&quot;Pat&quot;</span><span class="p">,</span> <span class="s2">&quot;Taylor&quot;</span><span class="p">,</span> <span class="s2">&quot;Jordan&quot;</span><span class="p">,</span> <span class="s2">&quot;Casey&quot;</span><span class="p">,</span> <span class="s2">&quot;Riley&quot;</span><span class="p">,</span> <span class="s2">&quot;Morgan&quot;</span><span class="p">]</span>
+<span class="n">last_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Smith&quot;</span><span class="p">,</span> <span class="s2">&quot;Johnson&quot;</span><span class="p">,</span> <span class="s2">&quot;Brown&quot;</span><span class="p">,</span> <span class="s2">&quot;Williams&quot;</span><span class="p">,</span> <span class="s2">&quot;Jones&quot;</span><span class="p">,</span> <span class="s2">&quot;Garcia&quot;</span><span class="p">,</span> <span class="s2">&quot;Miller&quot;</span><span class="p">,</span> <span class="s2">&quot;Davis&quot;</span><span class="p">,</span> <span class="s2">&quot;Lopez&quot;</span><span class="p">]</span>
+
+<span class="c1"># Function to generate a random name</span>
+<span class="k">def</span> <span class="nf">generate_random_name</span><span class="p">():</span>
+    <span class="n">first_name</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">first_names</span><span class="p">)</span>
+    <span class="n">last_name</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">last_names</span><span class="p">)</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">first_name</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">last_name</span><span class="si">}</span><span class="s2">&quot;</span>
+
+<span class="c1"># Generate and print a random name</span>
+<span class="n">random_name</span> <span class="o">=</span> <span class="n">generate_random_name</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">random_name</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="example-2">
+<h1>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h1>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">string</span>
 
@@ -392,8 +413,8 @@
 </pre></div>
 </div>
 </section>
-<section id="python-script-uuid">
-<h1>Python Script UUID<a class="headerlink" href="#python-script-uuid" title="Link to this heading">#</a></h1>
+<section id="example-3-python-script-uuid">
+<h1>Example 3 Python Script UUID<a class="headerlink" href="#example-3-python-script-uuid" title="Link to this heading">#</a></h1>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">uuid</span>
 
 <span class="k">def</span> <span class="nf">generate_unique_name</span><span class="p">(</span><span class="n">department</span><span class="p">):</span>
@@ -418,8 +439,8 @@
 </pre></div>
 </div>
 </section>
-<section id="python-timestamp-random">
-<h1>Python Timestamp Random<a class="headerlink" href="#python-timestamp-random" title="Link to this heading">#</a></h1>
+<section id="example-4-python-timestamp-random">
+<h1>Example 4 Python Timestamp Random<a class="headerlink" href="#example-4-python-timestamp-random" title="Link to this heading">#</a></h1>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hashlib</span>
 <span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">string</span>
@@ -444,8 +465,8 @@
 </pre></div>
 </div>
 </section>
-<section id="python-script-hash-function">
-<h1>Python Script Hash Function<a class="headerlink" href="#python-script-hash-function" title="Link to this heading">#</a></h1>
+<section id="example-5-python-script-hash-function">
+<h1>Example 5 Python Script Hash Function<a class="headerlink" href="#example-5-python-script-hash-function" title="Link to this heading">#</a></h1>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hashlib</span>
 <span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">string</span>
@@ -470,8 +491,8 @@
 </pre></div>
 </div>
 </section>
-<section id="python-script-incremental-counter">
-<h1>Python Script Incremental Counter<a class="headerlink" href="#python-script-incremental-counter" title="Link to this heading">#</a></h1>
+<section id="example-6-python-script-incremental-counter">
+<h1>Example 6 Python Script Incremental Counter<a class="headerlink" href="#example-6-python-script-incremental-counter" title="Link to this heading">#</a></h1>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_unique_name</span><span class="p">(</span><span class="n">department</span><span class="p">,</span> <span class="n">counter</span><span class="p">):</span>
 <span class="n">unique_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">department</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">counter</span><span class="si">:</span><span class="s2">04d</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="k">return</span> <span class="n">unique_name</span>
@@ -520,11 +541,12 @@
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Random Name Generator</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script">Python Script</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-uuid">Python Script UUID</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python-timestamp-random">Python Timestamp Random</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-hash-function">Python Script Hash Function</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#python-script-incremental-counter">Python Script Incremental Counter</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-python-script-uuid">Example 3 Python Script UUID</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-python-timestamp-random">Example 4 Python Timestamp Random</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5-python-script-hash-function">Example 5 Python Script Hash Function</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-python-script-incremental-counter">Example 6 Python Script Incremental Counter</a></li>
 </ul>
 
   </nav></div>
