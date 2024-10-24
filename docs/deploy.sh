@@ -1,3 +1,4 @@
+#!/bin/bash
 make html
 cp -r ../docs/_build/html/* .
 git add -A
