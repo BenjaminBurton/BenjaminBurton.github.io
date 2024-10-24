@@ -4,7 +4,7 @@ File Information Extraction Examples
 ====================================
 
 
-Method 1: Plain Script
+Method 1: Plain Script for data extraction
 ----------------------
 
 This method directly lists and prints file information in the current working directory without defining a function.
