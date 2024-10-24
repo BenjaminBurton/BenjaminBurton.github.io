@@ -4,7 +4,7 @@ cd docs
 make html
 
 # Copy the built HTML files to the GitHub repository
-cp -r _build/html/_sources/* /Users/Apple/Documents/LevLUp/AWS/Projects/CDA/CI:CD/Python/MasterPy/docs
+cp -r _build/html/*
 
 # Navigate to the GitHub repository and push the changes
 cd ../your-repo
