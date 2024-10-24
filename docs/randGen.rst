@@ -25,8 +25,8 @@ Example 1
     print(random_name)
 
 
-Example 2
-============
+Example 2 Python script
+=========================
 
 .. code-block:: python
 
