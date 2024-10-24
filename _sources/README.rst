@@ -1,7 +1,7 @@
 README
 =======
 
-Welcome to my Python Documentation repo! 
+Welcome to my Python repo! 
 
 This repository is part of my journey in the **Level Up in Tech** DevOps Bootcamp.
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd docs
 make html
 # Copy the built HTML files to the GitHub repository
 cp -r _build/html/*
