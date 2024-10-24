@@ -25,12 +25,11 @@ Documentation for details.
    setup
    pull_request_template
    data_extraction
-   randGen
+   randomGen
+   .. _file_info_examples:
    projects
    contributing
    license
-   
-   .. _file_info_examples:
 
 
 
