@@ -25,14 +25,14 @@ Documentation for details.
    setup
    pull_request_template
    data_extraction
-   randomGen
-   .. _file_info_examples:
+   randGen
    projects
    contributing
    license
 
+   .. _file_info_examples:
 
-
+   
 
 Welcome to ServerlessPy Documentation
 =====================================

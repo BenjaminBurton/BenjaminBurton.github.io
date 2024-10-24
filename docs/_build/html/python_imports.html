@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Installation &#8212; ServerlessPy 1.0 documentation</title>
+    <title>Python imports.py &#8212; ServerlessPy 1.0 documentation</title>
   
   
   
@@ -43,11 +43,11 @@
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'installation';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'python_imports';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Usage" href="usage.html" />
-    <link rel="prev" title="README" href="README.html" />
+    <link rel="next" title="Data Types" href="data_types.html" />
+    <link rel="prev" title="gitignore" href="gitignore.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -139,16 +139,14 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="README.html">README</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gitignore.html">gitignore</a></li>
-<li class="toctree-l1"><a class="reference internal" href="imports.html">imports</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Python imports.py</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_types.html">Data Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="helpers.html">Helpers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="create_instance.html">create instance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="setup.html">setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_request_template.html">pull request template</a></li>
 </ul>
 
     </div>
@@ -220,7 +218,7 @@
       
       
       
-      <li><a href="https://github.com/zaireali649/luit-oct-2024-purple/edit/main/docs/installation.rst" target="_blank"
+      <li><a href="https://github.com/zaireali649/luit-oct-2024-purple/edit/main/docs/python_imports.rst" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -250,7 +248,7 @@
       
       
       
-      <li><a href="_sources/installation.rst" target="_blank"
+      <li><a href="_sources/python_imports.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -313,7 +311,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -324,11 +324,27 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Installation</h1>
+    <h1>Python imports.py</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#original-variables">Original variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-cool-stuff">New cool stuff</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mixed-data-types-example">Mixed data types example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-formatting-and-concatenation">String formatting and concatenation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-slicing">String slicing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math-operations">Math operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-logic-operations">Boolean logic operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-casting-and-rounding">Type casting and rounding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#working-with-lists">Working with lists</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -338,13 +354,142 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h1>
-<p>Follow these steps to install the necessary tools:</p>
-<ol class="arabic simple">
-<li><p>Install Python</p></li>
-<li><p>Install necessary packages</p></li>
-</ol>
+  <section id="python-imports-py">
+<h1>Python imports.py<a class="headerlink" href="#python-imports-py" title="Link to this heading">#</a></h1>
+<dl class="simple">
+<dt>from datetime import datetime</dt><dd><p>Importing the datetime module to work with dates and times</p>
+</dd>
+<dt>import math</dt><dd><p>Importing math for advanced mathematical functions</p>
+</dd>
+</dl>
+<section id="original-variables">
+<h2>Original variables<a class="headerlink" href="#original-variables" title="Link to this heading">#</a></h2>
+<dl class="simple">
+<dt>var = “These are words.”</dt><dd><p>Defining a string variable</p>
+</dd>
+<dt>print(type(var))</dt><dd><p>Printing the type of var, which will be <cite>&lt;class ‘str’&gt;</cite></p>
+</dd>
+<dt>var2 = “386”</dt><dd><p>Another string variable that looks like a number</p>
+</dd>
+<dt>print(type(var2))</dt><dd><p>Printing the type of var2, which is also a string <cite>&lt;class ‘str’&gt;</cite></p>
+</dd>
+<dt>var3 = int(var2)</dt><dd><p>Converting the string ‘386’ to an integer</p>
+</dd>
+<dt>print(type(var3))</dt><dd><p>Printing the type of var3, which will now be <cite>&lt;class ‘int’&gt;</cite></p>
+</dd>
+<dt>var4 = input(“Enter a number: “)</dt><dd><p>Taking user input, which will always return a string</p>
+</dd>
+<dt>print(var4)</dt><dd><p>Printing the value entered by the user</p>
+</dd>
+<dt>print(type(var4))</dt><dd><p>Printing the type of var4, which will be <cite>&lt;class ‘str’&gt;</cite></p>
+</dd>
+<dt>var5 = float(var4)</dt><dd><p>Converting the user input (string) to a float</p>
+</dd>
+<dt>print(var5 + 1)</dt><dd><p>Adding 1 to the float value and printing the result</p>
+</dd>
+<dt>var6 = datetime.now()</dt><dd><p>Getting the current date and time</p>
+</dd>
+<dt>print(var6)</dt><dd><p>Printing the current date and time</p>
+</dd>
+<dt>print(type(var6))</dt><dd><p>Printing the type of var6, which will be <cite>&lt;class ‘datetime.datetime’&gt;</cite></p>
+</dd>
+</dl>
+</section>
+<section id="new-cool-stuff">
+<h2>New cool stuff<a class="headerlink" href="#new-cool-stuff" title="Link to this heading">#</a></h2>
+</section>
+<section id="mixed-data-types-example">
+<h2>Mixed data types example<a class="headerlink" href="#mixed-data-types-example" title="Link to this heading">#</a></h2>
+<dl class="simple">
+<dt>var1 = “42”</dt><dd><p>String that looks like a number</p>
+</dd>
+<dt>var2 = 10.5</dt><dd><p>Float</p>
+</dd>
+<dt>var3 = 3</dt><dd><p>Integer</p>
+</dd>
+</dl>
+<p>Convert var1 to an integer, add it to var2 and var3, then show type of result</p>
+<p>result = int(var1) + var2 + var3
+print(f”Result of adding different types: {result}”)
+print(f”Type of result: {type(result)}”)</p>
+<blockquote>
+<div><p>Type will be float since var2 is float</p>
+</div></blockquote>
+</section>
+<section id="string-formatting-and-concatenation">
+<h2>String formatting and concatenation<a class="headerlink" href="#string-formatting-and-concatenation" title="Link to this heading">#</a></h2>
+<p>name = “Python”
+greeting = f”Hello, {name}!”</p>
+<blockquote>
+<div><p>f-string for formatting</p>
+</div></blockquote>
+<p>print(greeting)</p>
+</section>
+<section id="string-slicing">
+<h2>String slicing<a class="headerlink" href="#string-slicing" title="Link to this heading">#</a></h2>
+<p>message = “Data Science is fun!”
+print(f”Sliced message: {message[0:4]}”)</p>
+<blockquote>
+<div><p>Output: Data</p>
+</div></blockquote>
+<dl class="simple">
+<dt>print(f”Reversed message: {message[::-1]}”)</dt><dd><p>Output: !nuf si ecneicS ataD</p>
+</dd>
+</dl>
+</section>
+<section id="math-operations">
+<h2>Math operations<a class="headerlink" href="#math-operations" title="Link to this heading">#</a></h2>
+<dl class="simple">
+<dt>print(f”Square root of 16: {math.sqrt(16)}”)</dt><dd><p>Output: 4.0</p>
+</dd>
+<dt>print(f”2 raised to the power 5: {math.pow(2, 5)}”)</dt><dd><p>Output: 32.0</p>
+</dd>
+</dl>
+</section>
+<section id="boolean-logic-operations">
+<h2>Boolean logic operations<a class="headerlink" href="#boolean-logic-operations" title="Link to this heading">#</a></h2>
+<p>a = True
+b = False
+print(f”a AND b: {a and b}”)</p>
+<blockquote>
+<div><p>Output: False</p>
+</div></blockquote>
+<dl class="simple">
+<dt>print(f”a OR b: {a or b}”)</dt><dd><p>Output: True</p>
+</dd>
+<dt>print(f”NOT a: {not a}”)</dt><dd><p>Output: False</p>
+</dd>
+</dl>
+</section>
+<section id="type-casting-and-rounding">
+<h2>Type casting and rounding<a class="headerlink" href="#type-casting-and-rounding" title="Link to this heading">#</a></h2>
+<p>float_num = 8.75
+print(f”Integer part of {float_num}: {int(float_num)}”)</p>
+<blockquote>
+<div><p>Output: 8</p>
+</div></blockquote>
+<dl class="simple">
+<dt>print(f”Rounded value of {float_num}: {round(float_num)}”)</dt><dd><p>Output: 9</p>
+</dd>
+</dl>
+</section>
+<section id="working-with-lists">
+<h2>Working with lists<a class="headerlink" href="#working-with-lists" title="Link to this heading">#</a></h2>
+<dl class="simple">
+<dt>my_list = [1, 2, 3.5, “Python”, True]</dt><dd><p>Mixed data types in a list</p>
+</dd>
+</dl>
+<p>print(f”Original list: {my_list}”)
+print(f”List length: {len(my_list)}”)
+print(f”Second item in list: {my_list[1]}”)</p>
+<blockquote>
+<div><p>Indexing</p>
+</div></blockquote>
+<dl class="simple">
+<dt>print(f”Last item in list: {my_list[-1]}”)</dt><dd><p>Negative indexing</p>
+</dd>
+</dl>
+</section>
 </section>
 
 
@@ -359,20 +504,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="README.html"
+       href="gitignore.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">README</p>
+        <p class="prev-next-title">gitignore</p>
       </div>
     </a>
     <a class="right-next"
-       href="usage.html"
+       href="data_types.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Usage</p>
+        <p class="prev-next-title">Data Types</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -382,6 +527,30 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#original-variables">Original variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-cool-stuff">New cool stuff</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mixed-data-types-example">Mixed data types example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-formatting-and-concatenation">String formatting and concatenation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-slicing">String slicing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math-operations">Math operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-logic-operations">Boolean logic operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-casting-and-rounding">Type casting and rounding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#working-with-lists">Working with lists</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
