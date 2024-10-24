@@ -3,30 +3,8 @@ Random Name Generator
 
 
 
-Example 1
+Python Script
 ===============
-
-.. code-block:: python
-
-    import random
-
-    # Lists of possible first and last names
-    first_names = ["Alex", "Jamie", "Chris", "Pat", "Taylor", "Jordan", "Casey", "Riley", "Morgan"]
-    last_names = ["Smith", "Johnson", "Brown", "Williams", "Jones", "Garcia", "Miller", "Davis", "Lopez"]
-
-    # Function to generate a random name
-    def generate_random_name():
-        first_name = random.choice(first_names)
-        last_name = random.choice(last_names)
-        return f"{first_name} {last_name}"
-
-    # Generate and print a random name
-    random_name = generate_random_name()
-    print(random_name)
-
-
-Example 2
-============
 
 .. code-block:: python
 
@@ -58,7 +36,7 @@ Example 2
 
 
 
-Example 3 Python Script UUID
+Python Script UUID
 ====================
 
 .. code-block:: python
@@ -87,7 +65,7 @@ Example 3 Python Script UUID
 
 
 
-Example 4 Python Timestamp Random
+Python Timestamp Random
 =========================
 
 .. code-block:: python
@@ -116,7 +94,7 @@ Example 4 Python Timestamp Random
 
 
 
-Example 5 Python Script Hash Function
+Python Script Hash Function
 ==============================
 
 .. code-block:: python
@@ -147,7 +125,9 @@ Example 5 Python Script Hash Function
 
 
 
-Example 6 Python Script Incremental Counter
+
+
+Python Script Incremental Counter
 ====================================
 
 .. code-block:: python
