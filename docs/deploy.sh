@@ -1,6 +1,5 @@
 #!/bin/bash
 # Navigate to your Sphinx project directory and build the docs
-cd docs
 make html
 
 # Copy the built HTML files to the GitHub repository
