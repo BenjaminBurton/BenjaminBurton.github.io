@@ -1,0 +1,679 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>gitignore &#8212; ServerlessPy 1.0 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=f0c89327" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_sources/gitignore';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">ServerlessPy 1.0 documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../README.html">README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gitignore.html">gitignore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helpers.html">Helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../create_instance.html">Create Instance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pull_request_template.html">Pull Request Template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_extraction.html">File Information Extraction Examples</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/zaireali649/luit-oct-2024-purple" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/zaireali649/luit-oct-2024-purple/edit/main/docs/_sources/gitignore.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/_sources/gitignore.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>gitignore</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="gitignore">
+<h1>gitignore<a class="headerlink" href="#gitignore" title="Link to this heading">#</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Byte-compiled / optimized / DLL files</span>
+
+<span class="n">__pycache__</span><span class="o">/</span>
+
+<span class="o">*.</span><span class="n">py</span><span class="p">[</span><span class="n">cod</span><span class="p">]</span>
+
+<span class="o">*</span><span class="err">$</span><span class="n">py</span><span class="o">.</span><span class="k">class</span>
+
+<span class="err"># </span><span class="nc">C</span> <span class="n">extensions</span>
+
+<span class="o">*.</span><span class="n">so</span>
+
+<span class="c1"># Distribution / packaging.</span>
+
+<span class="o">.</span><span class="n">Python</span>
+
+<span class="n">build</span><span class="o">/</span>
+
+<span class="n">develop</span><span class="o">-</span><span class="n">eggs</span><span class="o">/</span>
+
+<span class="n">dist</span><span class="o">/</span>
+
+<span class="n">downloads</span><span class="o">/</span>
+
+<span class="n">eggs</span><span class="o">/</span>
+
+<span class="o">.</span><span class="n">eggs</span><span class="o">/</span>
+
+<span class="n">lib</span><span class="o">/</span>
+
+<span class="n">lib64</span><span class="o">/</span>
+
+<span class="n">parts</span><span class="o">/</span>
+
+<span class="n">sdist</span><span class="o">/</span>
+
+<span class="n">var</span><span class="o">/</span>
+
+<span class="n">wheels</span><span class="o">/</span>
+
+<span class="n">share</span><span class="o">/</span><span class="n">python</span><span class="o">-</span><span class="n">wheels</span><span class="o">/</span>
+
+<span class="o">*.</span><span class="n">egg</span><span class="o">-</span><span class="n">info</span><span class="o">/</span>
+
+<span class="o">.</span><span class="n">installed</span><span class="o">.</span><span class="n">cfg</span>
+
+<span class="o">*.</span><span class="n">egg</span>
+
+<span class="n">MANIFEST</span>
+
+<span class="c1"># PyInstaller</span>
+
+<span class="c1">#  Usually these files are written by a python script from a template</span>
+
+<span class="c1">#  before PyInstaller builds the exe, so as to inject date/other infos into it.</span>
+
+<span class="o">*.</span><span class="n">manifest</span>
+
+<span class="o">*.</span><span class="n">spec</span>
+
+
+<span class="c1"># Installer logs</span>
+
+<span class="n">pip</span><span class="o">-</span><span class="n">log</span><span class="o">.</span><span class="n">txt</span>
+
+<span class="n">pip</span><span class="o">-</span><span class="n">delete</span><span class="o">-</span><span class="n">this</span><span class="o">-</span><span class="n">directory</span><span class="o">.</span><span class="n">txt</span>
+
+<span class="c1"># Unit test / coverage reports</span>
+
+<span class="n">htmlcov</span><span class="o">/</span>
+
+<span class="o">.</span><span class="n">tox</span><span class="o">/</span>
+
+<span class="o">.</span><span class="n">nox</span><span class="o">/</span>
+
+<span class="o">.</span><span class="n">coverage</span>
+
+<span class="o">.</span><span class="n">coverage</span><span class="o">.*</span>
+
+<span class="o">.</span><span class="n">cache</span>
+
+<span class="n">nosetests</span><span class="o">.</span><span class="n">xml</span>
+
+<span class="n">coverage</span><span class="o">.</span><span class="n">xml</span>
+
+<span class="o">*.</span><span class="n">cover</span>
+
+<span class="o">*.</span><span class="n">py</span><span class="p">,</span><span class="n">cover</span>
+
+<span class="o">.</span><span class="n">hypothesis</span><span class="o">/</span>
+
+<span class="o">.</span><span class="n">pytest_cache</span><span class="o">/</span>
+
+<span class="n">cover</span><span class="o">/</span>
+
+<span class="c1"># Translations</span>
+
+<span class="o">*.</span><span class="n">mo</span>
+
+<span class="o">*.</span><span class="n">pot</span>
+
+<span class="c1"># Django stuff:</span>
+
+<span class="o">*.</span><span class="n">log</span>
+
+<span class="n">local_settings</span><span class="o">.</span><span class="n">py</span>
+
+<span class="n">db</span><span class="o">.</span><span class="n">sqlite3</span>
+
+<span class="n">db</span><span class="o">.</span><span class="n">sqlite3</span><span class="o">-</span><span class="n">journal</span>
+
+<span class="c1"># Flask stuff:</span>
+
+<span class="n">instance</span><span class="o">/</span>
+
+<span class="o">.</span><span class="n">webassets</span><span class="o">-</span><span class="n">cache</span>
+
+<span class="c1"># Scrapy stuff:</span>
+
+<span class="o">.</span><span class="n">scrapy</span>
+
+<span class="c1"># Sphinx documentation</span>
+
+<span class="n">docs</span><span class="o">/</span><span class="n">_build</span><span class="o">/</span>
+
+<span class="c1"># PyBuilder</span>
+
+<span class="o">.</span><span class="n">pybuilder</span><span class="o">/</span>
+
+<span class="n">target</span><span class="o">/</span>
+
+<span class="c1"># Jupyter Notebook</span>
+
+<span class="o">.</span><span class="n">ipynb_checkpoints</span>
+
+<span class="c1"># IPython</span>
+
+<span class="n">profile_default</span><span class="o">/</span>
+
+<span class="n">ipython_config</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c1"># pyenv</span>
+
+<span class="c1">#   For a library or package, you might want to ignore these files since the code is</span>
+
+<span class="c1">#   intended to run in multiple environments; otherwise, check them in:</span>
+
+<span class="c1"># .python-version</span>
+
+<span class="c1"># pipenv</span>
+
+<span class="c1">#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.</span>
+
+<span class="c1">#   However, in case of collaboration, if having platform-specific dependencies or dependencies</span>
+
+<span class="c1">#   having no cross-platform support, pipenv may install dependencies that don&#39;t work, or not</span>
+
+<span class="c1">#   install all needed dependencies.</span>
+
+<span class="c1">#Pipfile.lock</span>
+
+<span class="c1"># poetry</span>
+
+<span class="c1">#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.</span>
+
+<span class="c1">#   This is especially recommended for binary packages to ensure reproducibility, and is more</span>
+
+<span class="c1">#   commonly ignored for libraries.</span>
+
+<span class="c1">#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control</span>
+
+<span class="c1">#poetry.lock</span>
+
+<span class="c1"># pdm</span>
+
+<span class="c1">#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.</span>
+
+<span class="c1">#pdm.lock</span>
+
+<span class="c1">#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it</span>
+
+<span class="c1">#   in version control.</span>
+
+<span class="c1">#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control</span>
+
+<span class="o">.</span><span class="n">pdm</span><span class="o">.</span><span class="n">toml</span>
+
+<span class="o">.</span><span class="n">pdm</span><span class="o">-</span><span class="n">python</span>
+
+<span class="o">.</span><span class="n">pdm</span><span class="o">-</span><span class="n">build</span><span class="o">/</span>
+
+<span class="c1"># PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm</span>
+
+<span class="n">__pypackages__</span><span class="o">/</span>
+
+<span class="c1"># Celery stuff</span>
+
+<span class="n">celerybeat</span><span class="o">-</span><span class="n">schedule</span>
+
+<span class="n">celerybeat</span><span class="o">.</span><span class="n">pid</span>
+
+<span class="c1"># SageMath parsed files</span>
+
+<span class="o">*.</span><span class="n">sage</span><span class="o">.</span><span class="n">py</span>
+
+<span class="c1"># Environments</span>
+
+<span class="o">.</span><span class="n">env</span>
+
+<span class="o">.</span><span class="n">venv</span>
+
+<span class="n">env</span><span class="o">/</span>
+
+<span class="n">venv</span><span class="o">/</span>
+
+<span class="n">ENV</span><span class="o">/</span>
+
+<span class="n">env</span><span class="o">.</span><span class="n">bak</span><span class="o">/</span>
+
+<span class="n">venv</span><span class="o">.</span><span class="n">bak</span><span class="o">/</span>
+
+<span class="c1"># Spyder project settings</span>
+
+<span class="o">.</span><span class="n">spyderproject</span>
+
+<span class="o">.</span><span class="n">spyproject</span>
+
+<span class="c1"># Rope project settings</span>
+
+<span class="o">.</span><span class="n">ropeproject</span>
+
+<span class="c1"># mkdocs documentation</span>
+
+<span class="o">/</span><span class="n">site</span>
+
+<span class="c1"># mypy</span>
+
+<span class="o">.</span><span class="n">mypy_cache</span><span class="o">/</span>
+
+<span class="o">.</span><span class="n">dmypy</span><span class="o">.</span><span class="n">json</span>
+
+<span class="n">dmypy</span><span class="o">.</span><span class="n">json</span>
+
+<span class="c1"># Pyre type checker</span>
+
+<span class="o">.</span><span class="n">pyre</span><span class="o">/</span>
+
+<span class="c1"># pytype static type analyzer</span>
+
+<span class="o">.</span><span class="n">pytype</span><span class="o">/</span>
+
+<span class="c1"># Cython debug symbols</span>
+
+<span class="n">cython_debug</span><span class="o">/</span>
+
+<span class="c1"># PyCharm</span>
+
+<span class="c1">#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can</span>
+
+<span class="c1">#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore</span>
+
+<span class="c1">#  and can be added to the global gitignore or merged into this file.  For a more nuclear</span>
+
+<span class="c1">#  option (not recommended) you can uncomment the following to ignore the entire idea folder.</span>
+
+<span class="c1">#.idea/</span>
+</pre></div>
+</div>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Benjamin Burton
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Benjamin Burton.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
