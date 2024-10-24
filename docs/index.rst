@@ -29,9 +29,10 @@ Documentation for details.
    projects
    contributing
    license
+   
    .. _file_info_examples:
 
-   
+
 
 Welcome to ServerlessPy Documentation
 =====================================
