@@ -26,11 +26,10 @@ Documentation for details.
    pull_request_template
    data_extraction
    randGen
+   .. _file_info_examples:
    projects
    contributing
    license
-   
-   .. _file_info_examples:
 
 
 
