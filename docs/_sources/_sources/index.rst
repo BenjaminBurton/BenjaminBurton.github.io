@@ -25,6 +25,7 @@ Documentation for details.
    setup
    pull_request_template
    data_extraction
+   randGen
    .. _file_info_examples:
    projects
    contributing
