@@ -12,7 +12,7 @@ Python Script
 
     import random
 
-    # Lists of possible first and last names to be chosen
+    # Lists of possible first and last names
     first_names = ["Alex", "Jamie", "Chris", "Pat", "Taylor", "Jordan", "Casey", "Riley", "Morgan"]
     last_names = ["Smith", "Johnson", "Brown", "Williams", "Jones", "Garcia", "Miller", "Davis", "Lopez"]
 
