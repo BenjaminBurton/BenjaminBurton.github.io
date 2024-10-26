@@ -31,18 +31,18 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/<your-org>/<your-repo>",
+            "url": "https://github.com/BenjaminBurton",
             "icon": "fa-brands fa-square-github",
             "type": "fontawesome",
         },
         {
             "name": "Medium",
-            "url": "https://<your-host>@<your-handle>",
+            "url": "https://medium.com/@mrburton",
             "icon": "fa-brands fa-medium",
         },
         {
             "name": "Linkedin",
-            "url": "https://<your-host>@<your-handle>",
+            "url": "https://www.linkedin.com/in/benjaminlburton/",
             "icon": "fa-brands fa-linkedin",
         },
     ],
