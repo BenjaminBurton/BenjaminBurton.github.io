@@ -17,7 +17,7 @@ release = '1.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 extensions = [
-    "sphinx_book_theme"
+    'myst_parser',
 ]
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -28,17 +28,30 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
-    'repository_url': 'https://github.com/zaireali649/luit-oct-2024-purple',
-    'use_repository_button': True,
-    'use_edit_page_button': True,
-    'path_to_docs': 'docs/',
-    'launch_buttons': {
-        'colab_url': 'https://colab.research.google.com/',
-        'binderhub_url': 'https://mybinder.org/',
-    },
-    'show_navbar_depth': 2,
-    'show_toc_level': 14,
-    'theme_toggle': 'dark'  # Enable dark mode
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/<your-org>/<your-repo>",
+            "icon": "fa-brands fa-square-github",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Medium",
+            "url": "https://<your-host>@<your-handle>",
+            "icon": "fa-brands fa-medium",
+        },
+        {
+            "name": "Linkedin",
+            "url": "https://<your-host>@<your-handle>",
+            "icon": "fa-brands fa-linkedin",
+        },
+    ],
 }
 
+
 html_static_path = ['_static']
+html_logo = '_static/images/SrvPy.png'
+html_css_files = [
+    'custom.css',
+]
+
