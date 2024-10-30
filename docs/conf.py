@@ -1,6 +1,5 @@
 import os
 import sys
-sys.path.insert(0, os.path.abspath('docsrc'))
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -9,49 +8,62 @@ sys.path.insert(0, os.path.abspath('docsrc'))
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+
 project = 'ServerlessPy'
 copyright = '2024, Benjamin Burton'
 author = 'Benjamin Burton'
-release = '1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-extensions = [
-    'myst_parser',
-]
+
+extensions = []
+
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
+
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 
-html_theme = 'sphinx_book_theme'
+# html_logo = "_static/logo-dark.svg"
 html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
             "url": "https://github.com/BenjaminBurton",
-            "icon": "fa-brands fa-square-github",
-            "type": "fontawesome",
+            "icon": "_static/github-brands-solid.svg",
+            "type": "local",
         },
         {
             "name": "Medium",
             "url": "https://medium.com/@mrburton",
-            "icon": "fa-brands fa-medium",
+            "icon": "_static/medium-brands-solid.svg",
+            "type": "local",
         },
         {
-            "name": "Linkedin",
+            "name": "LinkedIn",
             "url": "https://www.linkedin.com/in/benjaminlburton/",
-            "icon": "fa-brands fa-linkedin",
+            "icon": "_static/linkedin-in-brands-solid.svg",
+            "type": "local",
         },
     ],
+    "logo": {
+        "image_light": "_static/logo-light.svg",
+        "image_dark": "_static/logo-dark.svg",
+        "link": "#",  # Optional: link for the logo
+        "text": "ServerlessPy",  # Optional: text next to the logo
+        "alt_text": "ServerlessPy - Home",  # Optional: alternative text for accessibility
+    }
 }
 
-
+html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
-html_logo = '_static/images/SrvPy.png'
 html_css_files = [
-    'custom.css',
+    "css/custom.css",
 ]
-
+html_sidebars = {
+    "**": ["sidebar-nav-bs", "sidebar-ethical-ads"],
+    "primary_sidebar_end": ["sidebar-ethical-ads"],
+}
