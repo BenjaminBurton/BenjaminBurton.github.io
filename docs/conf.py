@@ -1,6 +1,10 @@
 import os
 import sys
 
+
+title = "ServerlessPy Documentation"
+
+
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -9,7 +13,7 @@ import sys
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'ServerlessPy'
+project = 'ServerlessPy Documentation'
 copyright = '2024, Benjamin Burton'
 author = 'Benjamin Burton'
 
@@ -27,7 +31,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 
-# html_logo = "_static/logo-dark.svg"
+# html theme options for display
 html_theme_options = {
     "icon_links": [
         {
@@ -48,7 +52,14 @@ html_theme_options = {
             "icon": "_static/linkedin-in-brands-solid.svg",
             "type": "local",
         },
+         {
+            "name": "Twitter",
+            "url": "#",
+            "icon": "_static/Twitter-in-brands-solid.svg",
+            "type": "local",
+        },
     ],
+    # html_logo = "_static/logo-dark.svg"
     "logo": {
         "image_light": "_static/logo-light.svg",
         "image_dark": "_static/logo-dark.svg",
@@ -58,11 +69,16 @@ html_theme_options = {
     }
 }
 
+# html theme configuration
 html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
+
+# Custom CSS files
 html_css_files = [
     "css/custom.css",
 ]
+
+# html sidebar behaviour
 html_sidebars = {
     "**": ["sidebar-nav-bs", "sidebar-ethical-ads"],
     "primary_sidebar_end": ["sidebar-ethical-ads"],

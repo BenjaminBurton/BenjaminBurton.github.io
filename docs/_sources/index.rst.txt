@@ -1,9 +1,9 @@
 .. _the-pydata-sphinx-theme:
 
 The ServerlessPy Sphinx Theme
-=======================
+===============================
 
-A clean, Bootstrap-based Sphinx theme created by `Pyvell <https://www.linkedin.com/in/benjaminlburton/>`_ .
+A clean, Bootstrap-based Sphinx theme created by `PyVell <https://www.linkedin.com/in/benjaminlburton/>`_ .
 
 .. raw:: html
 
@@ -106,11 +106,4 @@ Information about different code samples and solutions learned while striving to
    user_guide/data_extraction
    user_guide/RandNameGen
    user_guide/user_guide
-   user_guide/index 
    user_guide/install
-   user_guide/layout
-   user_guide/navigation
-   user_guide/page-toc
-   user_guide/header-links
-   user_guide/source-buttons
-   user_guide/indices
