@@ -60,8 +60,8 @@ To get started with this repo, follow these steps:
 
 .. code-block:: python
 
-    git clone https://github.com/zaireali649/luit-oct-2024-purple
-    cd luit-oct-2024-purple
+    git clone https://github.com/BenjaminBurton/BenjaminBurton.github.io
+    cd BenjaminBurton.github.io
 
 
 2. (Optional) Set up a virtual environment:
