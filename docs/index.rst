@@ -72,7 +72,6 @@ User Guide
 
   user_guide/README
   user_guide/gitignore
-  user_guide/imports
   user_guide/data_types
   user_guide/helpers
   user_guide/create_instance
@@ -82,6 +81,7 @@ User Guide
   user_guide/RandNameGen
   user_guide/user_guide
   user_guide/install
+  user_guide/imports
 
 * :ref:`genindex`
 * :ref:`modindex`
