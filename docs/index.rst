@@ -1,109 +1,88 @@
-.. _the-pydata-sphinx-theme:
+.. _index:
 
-The ServerlessPy Sphinx Theme
-===============================
+.. ServerlessPy documentation master file, created by
+   sphinx-quickstart on Fri Nov  1 11:13:24 2024.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-A clean, Bootstrap-based Sphinx theme created by `PyVell <https://www.linkedin.com/in/benjaminlburton/>`_ .
+Welcome to ServerlessPy's documentation!
+========================================
+
 
 .. raw:: html
 
-   <div class="sd-container-fluid sd-sphinx-override sd-mb-4 gallery-directive docutils">
-       <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-2 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 docutils">
+   <div class="cards-container">
+        <div class="card">
+        <img src="_static/python-brands-solid.svg" alt="Python Logo" style="width: 50px; height: auto;">
+            <h3><a href="section1">Python I</a></h3>
+            <p>Python programming Basics, syntax, variables, data types, and simple functions.</p>
+            <p>Conditional statements, loops, basic data structures (lists, tuples, dictionaries).</p>
+        </div>
+        <div class="card">
+        <img src="_static/python-brands-solid.svg" alt="Python Logo" style="width: 50px; height: auto;">
+            <h3><a href="section2">Python II</a></h3>
+            <p>Advanced data structures, error handling, file operations, and modules.</p>
+            <p>Object-oriented programming, classes, inheritance, and more complex functions.</p>
+        </div>
+        <div class="card">
+        <img src="_static/python-brands-solid.svg" alt="Python Logo" style="width: 50px; height: auto;">
+            <h3><a href="section3">Python II</a></h3>
+            <p>High-level concepts like decorators, generators, context managers, and multi-threading.</p>
+            <p>Web development with frameworks Django/Flask, data science libraries like Pandas/NumPy.</p>
+        </div>
+        <div class="card">
+        <img src="_static/aws-brands-solid.svg" alt="Python Logo" style="width: 50px; height: auto;">
+            <h3><a href="section4">CloudFormation</a></h3>
+            <p>An AWS service that provides a common language for you to describe and provision all the infrastructure resources in your cloud environment.</p>
+            <p>Automate the setup of AWS services such as EC2 instances, RDS databases, using templated configuration files.</p>
+        </div>
+        <div class="card">
+        <img src="_static/infinity-solid.svg" alt="Python Logo" style="width: 50px; height: auto;">
+            <h3><a href="section5">Automation</a></h3>
+            <p>Automation involves using technology to perform tasks with minimal human intervention.</p>
+            <p>Automate repetitive tasks, improve efficiency, reduce errors, and save time. Examples include automated backups, deployments, and system monitoring.</p>
+        </div>
+        <div class="card">
+        <img src="_static/gitlab-brands-solid.svg" alt="Python Logo" style="width: 50px; height: auto;">
+            <h3><a href="section6">CI/CD</a></h3>
+            <p>CI (continuous integration) ensures Regularly merging code changes to a central repository where automated builds and tests run.</p>
+            <p>CD (continuous delivery) ensures that code changes are automatically deployed to production</p>
+        </div>
+         </br>
+         </br>
+         </br>
+         </br>
+         </br>
+         </br>
+    </div>
 
-           <div class="sd-col sd-d-flex-row docutils">
-               <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-                   <div class="sd-card-header docutils">
-                       <p class="sd-card-text"><span class="fab fa-bootstrap pst-color-primary"></span> Built with Bootstrap</p>
-                   </div>
-                   <div class="sd-card-body docutils">
-                       <p class="sd-card-text">Use Bootstrap classes and functionality in your documentation.</p>
-                   </div>
-               </div>
-           </div>
-
-           <div class="sd-col sd-d-flex-row docutils">
-               <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-                   <div class="sd-card-header docutils">
-                       <p class="sd-card-text"><span class="fas fa-bolt pst-color-primary"></span> Responsive Design</p>
-                   </div>
-                   <div class="sd-card-body docutils">
-                       <p class="sd-card-text">Site sections will change behavior and size at different screen sizes.</p>
-                   </div>
-               </div>
-           </div>
-
-           <div class="sd-col sd-d-flex-row docutils">
-               <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-                   <div class="sd-card-header docutils">
-                       <p class="sd-card-text"><span class="fas fa-circle-half-stroke pst-color-primary"></span> Light / Dark theme</p>
-                   </div>
-                   <div class="sd-card-body docutils">
-                       <p class="sd-card-text">Users can toggle between light and dark themes interactively.</p>
-                   </div>
-               </div>
-           </div>
-
-           <div class="sd-col sd-d-flex-row docutils">
-               <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-                   <div class="sd-card-header docutils">
-                       <p class="sd-card-text"><span class="fas fa-paint-brush pst-color-primary"></span> Customizable UI and Themes</p>
-                   </div>
-                   <div class="sd-card-body docutils">
-                       <p class="sd-card-text">Easily adjust the look and feel to match your brand.</p>
-                   </div>
-               </div>
-           </div>
-
-           <div class="sd-col sd-d-flex-row docutils">
-               <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-                   <div class="sd-card-header docutils">
-                       <p class="sd-card-text"><span class="fas fa-database pst-color-primary"></span> Supports PyData and Jupyter</p>
-                   </div>
-                   <div class="sd-card-body docutils">
-                       <p class="sd-card-text">Tailored for scientific documentation with PyData and Jupyter support.</p>
-                   </div>
-               </div>
-           </div>
-
-           <div class="sd-col sd-d-flex-row docutils">
-               <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-                   <div class="sd-card-header docutils">
-                       <p class="sd-card-text"><span class="fas fa-images pst-color-primary"></span> Example Gallery</p>
-                   </div>
-                   <div class="sd-card-body docutils">
-                       <p class="sd-card-text">Showcase examples in an organized, visual format.</p>
-                   </div>
-               </div>
-           </div>
-
-       </div>
-   </div>
-
-
-.. seealso::
+.. note::
    If you are looking for a Sphinx theme that puts all of its sub-pages in the sidebar, the 
    `Sphinx Book Theme <https://sphinx-book-theme.readthedocs.io/>`_ has a similar look and feel, and 
    `Furo <https://pradyunsg.me/furo/quickstart/>`_ is another excellent choice. You can also see 
    `the Sphinx Themes Gallery <https://sphinx-themes.org>`_ for more ideas.
 
-User Guide
-----------
 
-Information about different code samples and solutions learned while striving to make Python our bread and butter
+
+User Guide
+===========
 
 .. toctree::
    :maxdepth: 2
 
+  user_guide/README
+  user_guide/gitignore
+  user_guide/imports
+  user_guide/data_types
+  user_guide/helpers
+  user_guide/create_instance
+  user_guide/setup
+  user_guide/pull_request_template
+  user_guide/data_extraction
+  user_guide/RandNameGen
+  user_guide/user_guide
+  user_guide/install
 
-   user_guide/README
-   user_guide/gitignore
-   user_guide/imports
-   user_guide/data_types
-   user_guide/helpers
-   user_guide/create_instance
-   user_guide/setup
-   user_guide/pull_request_template
-   user_guide/data_extraction
-   user_guide/RandNameGen
-   user_guide/user_guide
-   user_guide/install
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

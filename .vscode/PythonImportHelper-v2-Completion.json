@@ -1,0 +1,92 @@
+[
+    {
+        "label": "project",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "project = 'ServerlessPy'\ncopyright = '2024, Benjamin Burton'\nauthor = 'Benjamin Burton'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "copyright",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "copyright = '2024, Benjamin Burton'\nauthor = 'Benjamin Burton'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"pydata_sphinx_theme\"",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "author",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "author = 'Benjamin Burton'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"pydata_sphinx_theme\"\nhtml_css_files = [",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "extensions",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "extensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"pydata_sphinx_theme\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "templates_path",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "templates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"pydata_sphinx_theme\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']\nhtml_theme_options = {",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "exclude_patterns",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"pydata_sphinx_theme\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']\nhtml_theme_options = {\n     \"icon_links\": [",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "html_theme",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "html_theme = \"pydata_sphinx_theme\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']\nhtml_theme_options = {\n     \"icon_links\": [\n        {\n            \"name\": \"GitHub\",\n            \"url\": \"https://github.com/BenjaminBurton\",",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "html_css_files",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "html_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']\nhtml_theme_options = {\n     \"icon_links\": [\n        {\n            \"name\": \"GitHub\",\n            \"url\": \"https://github.com/BenjaminBurton\",\n            \"icon\": \"_static/github-brands-solid.svg\",",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "html_static_path",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "html_static_path = ['_static']\nhtml_theme_options = {\n     \"icon_links\": [\n        {\n            \"name\": \"GitHub\",\n            \"url\": \"https://github.com/BenjaminBurton\",\n            \"icon\": \"_static/github-brands-solid.svg\",\n            \"type\": \"local\",\n        },\n        {",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "html_theme_options",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "html_theme_options = {\n     \"icon_links\": [\n        {\n            \"name\": \"GitHub\",\n            \"url\": \"https://github.com/BenjaminBurton\",\n            \"icon\": \"_static/github-brands-solid.svg\",\n            \"type\": \"local\",\n        },\n        {\n            \"name\": \"Medium\",",
+        "detail": "docs.conf",
+        "documentation": {}
+    }
+]

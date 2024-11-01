@@ -1,10 +1,3 @@
-import os
-import sys
-
-
-title = "ServerlessPy Documentation"
-
-
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -13,7 +6,7 @@ title = "ServerlessPy Documentation"
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'ServerlessPy Documentation'
+project = 'ServerlessPy'
 copyright = '2024, Benjamin Burton'
 author = 'Benjamin Burton'
 
@@ -30,10 +23,13 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-
-# html theme options for display
+html_theme = "pydata_sphinx_theme"
+html_css_files = [
+    'custom.css',
+]
+html_static_path = ['_static']
 html_theme_options = {
-    "icon_links": [
+     "icon_links": [
         {
             "name": "GitHub",
             "url": "https://github.com/BenjaminBurton",
@@ -59,27 +55,11 @@ html_theme_options = {
             "type": "local",
         },
     ],
-    # html_logo = "_static/logo-dark.svg"
-    "logo": {
+     "logo": {
         "image_light": "_static/logo-light.svg",
         "image_dark": "_static/logo-dark.svg",
-        "link": "#",  # Optional: link for the logo
+        "link": "/docs/_build/html/index.html",  # Optional: link for the logo
         "text": "ServerlessPy",  # Optional: text next to the logo
         "alt_text": "ServerlessPy - Home",  # Optional: alternative text for accessibility
     }
-}
-
-# html theme configuration
-html_theme = "pydata_sphinx_theme"
-html_static_path = ['_static']
-
-# Custom CSS files
-html_css_files = [
-    "css/custom.css",
-]
-
-# html sidebar behaviour
-html_sidebars = {
-    "**": ["sidebar-nav-bs", "sidebar-ethical-ads"],
-    "primary_sidebar_end": ["sidebar-ethical-ads"],
 }
