@@ -7,8 +7,6 @@ from datetime import datetime
 import math
     Importing math for advanced mathematical functions
 
-Original variables
-------------------
 
 .. code-block:: python
 
