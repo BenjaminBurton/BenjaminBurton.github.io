@@ -58,7 +58,7 @@ html_theme_options = {
      "logo": {
         "image_light": "_static/logo-light.svg",
         "image_dark": "_static/logo-dark.svg",
-        "link": "#",  # Optional: link for the logo
+        "link": "https://benjaminburton.github.io/",  # Optional: link for the logo
         "text": "ServerlessPy",  # Optional: text next to the logo
         "alt_text": "ServerlessPy - Home",  # Optional: alternative text for accessibility
     }
