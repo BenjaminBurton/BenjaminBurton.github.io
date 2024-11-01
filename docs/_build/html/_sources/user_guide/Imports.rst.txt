@@ -1,11 +1,15 @@
 Imports
 =================
 
-from datetime import datetime
+
+.. code-block:: python
+    
+    from datetime import datetime
     Importing the datetime module to work with dates and times
 
-import math
-    Importing math for advanced mathematical functions
+    import math
+        Importing math for advanced mathematical functions
+
 
 
 .. code-block:: python
