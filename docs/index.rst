@@ -74,6 +74,7 @@ User Guide
   user_guide/gitignore
   user_guide/data_types
   user_guide/helpers
+  user_guide/import
   user_guide/create_instance
   user_guide/setup
   user_guide/pull_request_template

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>gitignore &#8212; ServerlessPy  documentation</title>
+    <title>imports Script &#8212; ServerlessPy  documentation</title>
   
   
   
@@ -43,11 +43,11 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/gitignore';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/import';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Data Types" href="data_types.html" />
-    <link rel="prev" title="README" href="README.html" />
+    <link rel="next" title="Create Instance" href="create_instance.html" />
+    <link rel="prev" title="Helpers" href="helpers.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -141,8 +141,8 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="gitignore.html">
     gitignore
   </a>
 </li>
@@ -162,8 +162,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="import.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     imports Script
   </a>
 </li>
@@ -349,8 +349,8 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="gitignore.html">
     gitignore
   </a>
 </li>
@@ -370,8 +370,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="import.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
     imports Script
   </a>
 </li>
@@ -530,7 +530,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">gitignore</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">imports Script</span></li>
   </ul>
 </nav>
 </div>
@@ -547,274 +547,76 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="gitignore">
-<h1>gitignore<a class="headerlink" href="#gitignore" title="Permalink to this heading">#</a></h1>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span># Byte-compiled / optimized / DLL files
-
-__pycache__/
-
-*.py[cod]
-
-*$py.class
-
-# C extensions
-
-*.so
-
-# Distribution / packaging.
-
-.Python
-
-build/
-
-develop-eggs/
-
-dist/
-
-downloads/
-
-eggs/
-
-.eggs/
-
-lib/
-
-lib64/
-
-parts/
-
-sdist/
-
-var/
-
-wheels/
-
-share/python-wheels/
-
-*.egg-info/
-
-.installed.cfg
-
-*.egg
-
-MANIFEST
-
-# PyInstaller
-
-#  Usually these files are written by a python script from a template
-
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-
-*.manifest
-
-*.spec
-
-
-# Installer logs
-
-pip-log.txt
-
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-
-htmlcov/
-
-.tox/
-
-.nox/
-
-.coverage
-
-.coverage.*
-
-.cache
-
-nosetests.xml
-
-coverage.xml
-
-*.cover
-
-*.py,cover
-
-.hypothesis/
-
-.pytest_cache/
-
-cover/
-
-# Translations
-
-*.mo
-
-*.pot
-
-# Django stuff:
-
-*.log
-
-local_settings.py
-
-db.sqlite3
-
-db.sqlite3-journal
-
-# Flask stuff:
-
-instance/
-
-.webassets-cache
-
-# Scrapy stuff:
-
-.scrapy
-
-# Sphinx documentation
-
-docs/_build/
-
-# PyBuilder
-
-.pybuilder/
-
-target/
-
-# Jupyter Notebook
-
-.ipynb_checkpoints
-
-# IPython
-
-profile_default/
-
-ipython_config.py
-
-# pyenv
-
-#   For a library or package, you might want to ignore these files since the code is
-
-#   intended to run in multiple environments; otherwise, check them in:
-
-# .python-version
-
-# pipenv
-
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-
-#   having no cross-platform support, pipenv may install dependencies that don&#39;t work, or not
-
-#   install all needed dependencies.
-
-#Pipfile.lock
-
-# poetry
-
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-
-#   commonly ignored for libraries.
-
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-
-#poetry.lock
-
-# pdm
-
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-
-#pdm.lock
-
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-
-#   in version control.
-
-#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
-
-.pdm.toml
-
-.pdm-python
-
-.pdm-build/
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-
-__pypackages__/
-
-# Celery stuff
-
-celerybeat-schedule
-
-celerybeat.pid
-
-# SageMath parsed files
-
-*.sage.py
-
-# Environments
-
-.env
-
-.venv
-
-env/
-
-venv/
-
-ENV/
-
-env.bak/
-
-venv.bak/
-
-# Spyder project settings
-
-.spyderproject
-
-.spyproject
-
-# Rope project settings
-
-.ropeproject
-
-# mkdocs documentation
-
-/site
-
-# mypy
-
-.mypy_cache/
-
-.dmypy.json
-
-dmypy.json
-
-# Pyre type checker
-
-.pyre/
-
-# pytype static type analyzer
-
-.pytype/
-
-# Cython debug symbols
-
-cython_debug/
-
-# PyCharm
-
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-
-#.idea/
+  <section id="imports-script">
+<h1>imports Script<a class="headerlink" href="#imports-script" title="Permalink to this heading">#</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>  <span class="c1"># Importing the datetime module to work with dates and times</span>
+<span class="kn">import</span> <span class="nn">math</span>  <span class="c1"># Importing math for advanced mathematical functions</span>
+
+<span class="c1"># Original variables</span>
+<span class="n">var</span> <span class="o">=</span> <span class="s2">&quot;These are words.&quot;</span>  <span class="c1"># Defining a string variable</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">var</span><span class="p">))</span>  <span class="c1"># Printing the type of var, which will be &lt;class &#39;str&#39;&gt;</span>
+
+<span class="n">var2</span> <span class="o">=</span> <span class="s2">&quot;386&quot;</span>  <span class="c1"># Another string variable that looks like a number</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">var2</span><span class="p">))</span>  <span class="c1"># Printing the type of var2, which is also a string &lt;class &#39;str&#39;&gt;</span>
+
+<span class="n">var3</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">var2</span><span class="p">)</span>  <span class="c1"># Converting the string &#39;386&#39; to an integer</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">var3</span><span class="p">))</span>  <span class="c1"># Printing the type of var3, which will now be &lt;class &#39;int&#39;&gt;</span>
+
+<span class="n">var4</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number: &quot;</span><span class="p">)</span>  <span class="c1"># Taking user input, which will always return a string</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var4</span><span class="p">)</span>  <span class="c1"># Printing the value entered by the user</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">var4</span><span class="p">))</span>  <span class="c1"># Printing the type of var4, which will be &lt;class &#39;str&#39;&gt;</span>
+
+<span class="n">var5</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var4</span><span class="p">)</span>  <span class="c1"># Converting the user input (string) to a float</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var5</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Adding 1 to the float value and printing the result</span>
+
+<span class="n">var6</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>  <span class="c1"># Getting the current date and time</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var6</span><span class="p">)</span>  <span class="c1"># Printing the current date and time</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">var6</span><span class="p">))</span>  <span class="c1"># Printing the type of var6, which will be &lt;class &#39;datetime.datetime&#39;&gt;</span>
+
+<span class="c1"># New cool stuff</span>
+
+<span class="c1"># Mixed data types example</span>
+<span class="n">var1</span> <span class="o">=</span> <span class="s2">&quot;42&quot;</span>  <span class="c1"># String that looks like a number</span>
+<span class="n">var2</span> <span class="o">=</span> <span class="mf">10.5</span>  <span class="c1"># Float</span>
+<span class="n">var3</span> <span class="o">=</span> <span class="mi">3</span>  <span class="c1"># Integer</span>
+
+<span class="c1"># Convert var1 to an integer, add it to var2 and var3, then show type of result</span>
+<span class="n">result</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">var1</span><span class="p">)</span> <span class="o">+</span> <span class="n">var2</span> <span class="o">+</span> <span class="n">var3</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result of adding different types: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Type of result: </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Type will be float since var2 is float</span>
+
+<span class="c1"># String formatting and concatenation</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+<span class="n">greeting</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!&quot;</span>  <span class="c1"># f-string for formatting</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
+
+<span class="c1"># String slicing</span>
+<span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Data Science is fun!&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sliced message: </span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output: Data</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Reversed message: </span><span class="si">{</span><span class="n">message</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output: !nuf si ecneicS ataD</span>
+
+<span class="c1"># Math operations</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Square root of 16: </span><span class="si">{</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output: 4.0</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;2 raised to the power 5: </span><span class="si">{</span><span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output: 32.0</span>
+
+<span class="c1"># Boolean logic operations</span>
+<span class="n">a</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">b</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a AND b: </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output: False</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a OR b: </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output: True</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;NOT a: </span><span class="si">{</span><span class="ow">not</span><span class="w"> </span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output: False</span>
+
+<span class="c1"># Type casting and rounding</span>
+<span class="n">float_num</span> <span class="o">=</span> <span class="mf">8.75</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Integer part of </span><span class="si">{</span><span class="n">float_num</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">float_num</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output: 8</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Rounded value of </span><span class="si">{</span><span class="n">float_num</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">float_num</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Output: 9</span>
+
+<span class="c1"># Working with lists</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>  <span class="c1"># Mixed data types in a list</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Original list: </span><span class="si">{</span><span class="n">my_list</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;List length: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Second item in list: </span><span class="si">{</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Indexing</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Last item in list: </span><span class="si">{</span><span class="n">my_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Negative indexing</span>
 </pre></div>
 </div>
 </section>
@@ -830,20 +632,20 @@ cython_debug/
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="README.html"
+       href="helpers.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">README</p>
+        <p class="prev-next-title">Helpers</p>
       </div>
     </a>
     <a class="right-next"
-       href="data_types.html"
+       href="create_instance.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data Types</p>
+        <p class="prev-next-title">Create Instance</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -861,7 +663,7 @@ cython_debug/
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../_sources/user_guide/gitignore.rst.txt">
+    <a href="../_sources/user_guide/import.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
