@@ -210,13 +210,6 @@
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="user_guide.html">
-    User Guide
-  </a>
-</li>
-
-
-<li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="install.html">
     Installation
   </a>
@@ -408,13 +401,6 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="RandNameGen.html">
     Random Name Generator
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="user_guide.html">
-    User Guide
   </a>
 </li>
 
@@ -619,6 +605,182 @@
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Last item in list: </span><span class="si">{</span><span class="n">my_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># Negative indexing</span>
 </pre></div>
 </div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span> <span class="c1"># Importing the datetime module to work with dates and times</span>
+
+<span class="kn">import</span> <span class="nn">math</span> <span class="c1"># Importing math for advanced mathematical functions</span>
+
+
+<span class="n">var</span> <span class="o">=</span> <span class="s2">&quot;These are words.&quot;</span>
+
+    <span class="n">Defining</span> <span class="n">a</span> <span class="n">string</span> <span class="n">variable</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">var</span><span class="p">))</span>
+
+    <span class="c1"># Printing the type of var, which will be `&lt;class &#39;str&#39;&gt;`</span>
+
+<span class="n">var2</span> <span class="o">=</span> <span class="s2">&quot;386&quot;</span>
+
+    <span class="c1"># Another string variable that looks like a number</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">var2</span><span class="p">))</span>
+
+    <span class="c1"># Printing the type of var2, which is also a string `&lt;class &#39;str&#39;&gt;`</span>
+
+<span class="n">var3</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">var2</span><span class="p">)</span>
+
+    <span class="c1"># Converting the string &#39;386&#39; to an integer</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">var3</span><span class="p">))</span>
+
+    <span class="c1"># Printing the type of var3, which will now be `&lt;class &#39;int&#39;&gt;`</span>
+
+<span class="n">var4</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number: &quot;</span><span class="p">)</span>
+
+    <span class="c1"># Taking user input, which will always return a string</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">var4</span><span class="p">)</span>
+
+    <span class="c1"># Printing the value entered by the user</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">var4</span><span class="p">))</span>
+
+    <span class="c1"># Printing the type of var4, which will be `&lt;class &#39;str&#39;&gt;`</span>
+
+<span class="n">var5</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">var4</span><span class="p">)</span>
+
+    <span class="c1"># Converting the user input (string) to a float</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">var5</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># Adding 1 to the float value and printing the result</span>
+
+<span class="n">var6</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+
+    <span class="c1"># Getting the current date and time</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">var6</span><span class="p">)</span>
+
+    <span class="c1"># Printing the current date and time</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">var6</span><span class="p">))</span>
+
+    <span class="c1"># Printing the type of var6, which will be `&lt;class &#39;datetime.datetime&#39;&gt;`</span>
+</pre></div>
+</div>
+<section id="mixed-data-types">
+<h2>Mixed data types<a class="headerlink" href="#mixed-data-types" title="Permalink to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">var1</span> <span class="o">=</span> <span class="s2">&quot;42&quot;</span>
+
+    <span class="c1"># String that looks like a number</span>
+
+<span class="n">var2</span> <span class="o">=</span> <span class="mf">10.5</span>
+
+    <span class="c1"># Float</span>
+
+<span class="n">var3</span> <span class="o">=</span> <span class="mi">3</span>
+
+    <span class="c1"># Integer</span>
+
+<span class="c1"># Convert var1 to an integer, add it to var2 and var3, then show type of result</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">var1</span><span class="p">)</span> <span class="o">+</span> <span class="n">var2</span> <span class="o">+</span> <span class="n">var3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result of adding different types: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Type of result: </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Type will be float since var2 is float</span>
+</pre></div>
+</div>
+</section>
+<section id="string-formatting-and-concatenation">
+<h2>String formatting and concatenation<a class="headerlink" href="#string-formatting-and-concatenation" title="Permalink to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+<span class="n">greeting</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!&quot;</span>
+
+    <span class="c1"># f-string for formatting</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="string-slicing">
+<h2>String slicing<a class="headerlink" href="#string-slicing" title="Permalink to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Data Science is fun!&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sliced message: </span><span class="si">{</span><span class="n">message</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Output: Data</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Reversed message: </span><span class="si">{</span><span class="n">message</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Output: !nuf si ecneicS ataD</span>
+</pre></div>
+</div>
+</section>
+<section id="math-operations">
+<h2>Math operations<a class="headerlink" href="#math-operations" title="Permalink to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Square root of 16: </span><span class="si">{</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Output: 4.0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;2 raised to the power 5: </span><span class="si">{</span><span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Output: 32.0</span>
+</pre></div>
+</div>
+</section>
+<section id="boolean-logic-operations">
+<h2>Boolean logic operations<a class="headerlink" href="#boolean-logic-operations" title="Permalink to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">b</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a AND b: </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Output: False</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a OR b: </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Output: True</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;NOT a: </span><span class="si">{</span><span class="ow">not</span><span class="w"> </span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Output: False</span>
+</pre></div>
+</div>
+</section>
+<section id="type-casting-and-rounding">
+<h2>Type casting and rounding<a class="headerlink" href="#type-casting-and-rounding" title="Permalink to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">float_num</span> <span class="o">=</span> <span class="mf">8.75</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Integer part of </span><span class="si">{</span><span class="n">float_num</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">float_num</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Output: 8</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Rounded value of </span><span class="si">{</span><span class="n">float_num</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">float_num</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Output: 9</span>
+</pre></div>
+</div>
+</section>
+<section id="working-with-lists">
+<h2>Working with lists<a class="headerlink" href="#working-with-lists" title="Permalink to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
+
+    <span class="c1"># Mixed data types in a list</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Original list: </span><span class="si">{</span><span class="n">my_list</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;List length: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Second item in list: </span><span class="si">{</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Indexing</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Last item in list: </span><span class="si">{</span><span class="n">my_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Negative indexing</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
@@ -659,6 +821,24 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mixed-data-types">Mixed data types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-formatting-and-concatenation">String formatting and concatenation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-slicing">String slicing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math-operations">Math operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-logic-operations">Boolean logic operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-casting-and-rounding">Type casting and rounding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#working-with-lists">Working with lists</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 
