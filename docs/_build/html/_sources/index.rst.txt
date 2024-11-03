@@ -81,7 +81,6 @@ User Guide
   user_guide/data_extraction
   user_guide/RandNameGen
   user_guide/install
-  user_guide/imports
 
 * :ref:`genindex`
 * :ref:`modindex`
