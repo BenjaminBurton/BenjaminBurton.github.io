@@ -80,7 +80,6 @@ User Guide
   user_guide/pull_request_template
   user_guide/data_extraction
   user_guide/RandNameGen
-  user_guide/user_guide
   user_guide/install
   user_guide/imports
 
