@@ -549,17 +549,122 @@
                   
   <section id="helpers">
 <h1>Helpers<a class="headerlink" href="#helpers" title="Permalink to this heading">#</a></h1>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_ec2_client</span><span class="p">():</span>
-    <span class="k">return</span> <span class="s2">&quot;ec2 client&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">boto3</span>  <span class="c1"># Import the Boto3 library to interact with AWS services</span>
 
-<span class="k">def</span> <span class="nf">create_ubuntu_instance</span><span class="p">(</span><span class="n">client</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">0</span>
 
-<span class="k">def</span> <span class="nf">create_amazon_linux_2023_instance</span><span class="p">(</span><span class="n">client</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">get_ec2_client</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates and returns an EC2 client using Boto3.</span>
 
-<span class="k">def</span> <span class="nf">create_amazon_linux_2_instance</span><span class="p">(</span><span class="n">client</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">0</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        boto3.client: The EC2 client.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s1">&#39;ec2&#39;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">get_s3_client</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates and returns an S3 client using Boto3.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        boto3.client: The S3 client.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s1">&#39;s3&#39;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">describe_instances</span><span class="p">(</span><span class="n">client</span><span class="p">:</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Describes EC2 instances and returns a list of instances.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        client (boto3.client): The EC2 client used to describe instances.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list: A list of instances.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">describe_instances</span><span class="p">()</span>  <span class="c1"># Call the describe_instances method to get information about EC2 instances</span>
+    <span class="n">instances</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">reservation</span> <span class="ow">in</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;Reservations&#39;</span><span class="p">]:</span>  <span class="c1"># Iterate over each reservation in the response</span>
+        <span class="n">instances</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">reservation</span><span class="p">[</span><span class="s1">&#39;Instances&#39;</span><span class="p">])</span>  <span class="c1"># Extend the instances list with instances from the reservation</span>
+    <span class="k">return</span> <span class="n">instances</span>
+
+
+<span class="k">def</span> <span class="nf">create_ubuntu_instance</span><span class="p">(</span><span class="n">client</span><span class="p">:</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates an Ubuntu EC2 instance.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        client (boto3.client): The EC2 client used to create the instance.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">create_instance</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="s2">&quot;ami-04b70fa74e45c3917&quot;</span><span class="p">)</span>  <span class="c1"># Call create_instance with the Ubuntu AMI ID</span>
+
+
+<span class="k">def</span> <span class="nf">create_amazon_linux_2023_instance</span><span class="p">(</span><span class="n">client</span><span class="p">:</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates an Amazon Linux 2023 EC2 instance.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        client (boto3.client): The EC2 client used to create the instance.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">create_instance</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="s2">&quot;ami-08a0d1e16fc3f61ea&quot;</span><span class="p">)</span>  <span class="c1"># Call create_instance with the Amazon Linux 2023 AMI ID</span>
+
+
+<span class="k">def</span> <span class="nf">create_amazon_linux_2_instance</span><span class="p">(</span><span class="n">client</span><span class="p">:</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates an Amazon Linux 2 EC2 instance.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        client (boto3.client): The EC2 client used to create the instance.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">create_instance</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="s2">&quot;ami-0eaf7c3456e7b5b68&quot;</span><span class="p">)</span>  <span class="c1"># Call create_instance with the Amazon Linux 2 AMI ID</span>
+
+
+<span class="k">def</span> <span class="nf">create_instance</span><span class="p">(</span><span class="n">client</span><span class="p">:</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">,</span> <span class="n">ami</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Creates an EC2 instance with the specified AMI.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        client (boto3.client): The EC2 client used to create the instance.</span>
+<span class="sd">        ami (str): The AMI ID to use for the instance.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">keyName</span> <span class="o">=</span> <span class="s1">&#39;private-ec2&#39;</span>  <span class="c1"># Key pair name for the instance</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">run_instances</span><span class="p">(</span><span class="n">MaxCount</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                        <span class="n">MinCount</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                        <span class="n">ImageId</span><span class="o">=</span><span class="n">ami</span><span class="p">,</span>
+                        <span class="n">InstanceType</span><span class="o">=</span><span class="s2">&quot;t2.micro&quot;</span><span class="p">,</span>
+                        <span class="n">KeyName</span><span class="o">=</span><span class="n">keyName</span><span class="p">,</span>
+                        <span class="n">SecurityGroupIds</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sg-0197b8159a5d886f8&#39;</span><span class="p">])</span>  <span class="c1"># Run the instance with specified parameters</span>
+
+
+<span class="k">def</span> <span class="nf">list_buckets</span><span class="p">(</span><span class="n">s3_client</span><span class="p">:</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Lists the names of all S3 buckets.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        s3_client (boto3.client): The S3 client used to list buckets.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list: A list of bucket names.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">s3_client</span><span class="o">.</span><span class="n">list_buckets</span><span class="p">()</span>  <span class="c1"># Call the list_buckets method to get information about S3 buckets</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">bucket</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">bucket</span> <span class="ow">in</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;Buckets&#39;</span><span class="p">]]</span>  <span class="c1"># Extract and return the list of bucket names</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">ec2_client</span> <span class="o">=</span> <span class="n">get_ec2_client</span><span class="p">()</span>  <span class="c1"># Get the EC2 client</span>
+    <span class="c1"># Uncomment the lines below to create instances</span>
+    <span class="c1"># create_ubuntu_instance(ec2_client)</span>
+    <span class="c1"># create_amazon_linux_2023_instance(ec2_client)</span>
+    <span class="c1"># create_amazon_linux_2_instance(ec2_client)</span>
+
+    <span class="n">s3_client</span> <span class="o">=</span> <span class="n">get_s3_client</span><span class="p">()</span>  <span class="c1"># Get the S3 client</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">s3_client</span><span class="o">.</span><span class="n">list_buckets</span><span class="p">()</span>  <span class="c1"># List the S3 buckets</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>  <span class="c1"># Print the response containing bucket information</span>
 </pre></div>
 </div>
 </section>

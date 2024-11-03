@@ -1,10 +1,12 @@
 Data Types
-==========
+=============
 
-from datetime import datetime
-    Importing the datetime module to work with dates and times
+
 
 .. code-block:: python
+
+    from datetime import datetime
+    Importing the datetime module to work with dates and times
 
     var = "These are words."
 
