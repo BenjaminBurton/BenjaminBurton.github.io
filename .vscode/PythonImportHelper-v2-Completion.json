@@ -13,7 +13,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "copyright = '2024, Benjamin Burton'\nauthor = 'Benjamin Burton'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"pydata_sphinx_theme\"",
+        "peekOfCode": "copyright = '2024, Benjamin Burton'\nauthor = 'Benjamin Burton'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"furo\"",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -22,7 +22,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "author = 'Benjamin Burton'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"pydata_sphinx_theme\"\nhtml_css_files = [",
+        "peekOfCode": "author = 'Benjamin Burton'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"furo\"\nhtml_css_files = [",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -31,7 +31,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "extensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"pydata_sphinx_theme\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']",
+        "peekOfCode": "extensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"furo\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -40,7 +40,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "templates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"pydata_sphinx_theme\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']\nhtml_theme_options = {",
+        "peekOfCode": "templates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"furo\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']\nhtml_theme_options = {",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -49,7 +49,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"pydata_sphinx_theme\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']\nhtml_theme_options = {\n     \"icon_links\": [",
+        "peekOfCode": "exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = \"furo\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']\nhtml_theme_options = {\n     \"icon_links\": [",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -58,7 +58,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "html_theme = \"pydata_sphinx_theme\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']\nhtml_theme_options = {\n     \"icon_links\": [\n        {\n            \"name\": \"GitHub\",\n            \"url\": \"https://github.com/BenjaminBurton\",",
+        "peekOfCode": "html_theme = \"furo\"\nhtml_css_files = [\n    'custom.css',\n]\nhtml_static_path = ['_static']\nhtml_theme_options = {\n     \"icon_links\": [\n        {\n            \"name\": \"GitHub\",\n            \"url\": \"https://github.com/BenjaminBurton\",",
         "detail": "docs.conf",
         "documentation": {}
     },
